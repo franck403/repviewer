@@ -19,10 +19,34 @@ body {
   padding: 0 20px;
 }
 
+.hero .container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: max-content;
+  flex-direction: column;
+  border-radius: 10px;
+  background: black;
+}
+
+#platformSelect {
+  color: black;
+}
+
+.hero .container * {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  color: white;
+}
+
 /* Hero section */
 .hero {
   padding: 40px 0;
   text-align: center;
+  background-color: black;
+  background-image: url(repviewer.png);
+  background-size: cover;
 }
 
 .logo {
@@ -278,6 +302,17 @@ footer {
 
 .back-home:hover {
   color: #f97316;
+}
+
+.bg.image {
+  position: fixed;
+  top:0px;
+  left:0px;
+  object-fit: cover;
+  height: 525px;
+  z-index: -1;
+  opacity: 0.5;
+  width: calc(100vw + 20px);
 }
 
 /* Responsive design */
